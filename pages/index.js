@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 
 
+
+
 function HomePage() {
     return <div id="main">
 
@@ -14,7 +16,7 @@ function HomePage() {
         <nav>
             <div className="nav-container">
                 <div className="toggle-menu">
-                     <Link href="/about">
+                     <Link href="">
                         <a>
                          <div className="line"></div>
                          <div className="line"></div>
@@ -23,7 +25,7 @@ function HomePage() {
                      </Link>
                 </div>
                      <Link href="#">
-                        <a>
+                        <a className="site-logo">
                             <img src="https://picsum.photos/seed/picsum/300/150" alt=""/>
                         </a>
                      </Link>
@@ -49,9 +51,10 @@ function HomePage() {
         <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, saepe!</p>
         <h4 className="section-title">HAPPY <br/>VALENTINES DAY</h4>
         <h6 className="section-subtitle">WINTER 2021</h6>
-        <Link href="#"><a className="section-link">DISCOVER NOW</a></Link>
     </div>
-     <div className="svg-container">
+        <Link href="#"><a className="first-section-link">DISCOVER NOW</a></Link>
+
+        <div className="svg-container">
          <svg className="svg-icon svg-icon-prev" viewBox="0 0 20 20">
              <path fill="#888"
                    d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -103,7 +106,7 @@ function HomePage() {
 
 
             </div>
-            <div className="third-section-svg-container">
+                <div className="third-section-svg-container">
                 <svg className="svg-icon svg-previous-icon" viewBox="0 0 20 20">
                     <path fill="#888"
                           d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -195,10 +198,11 @@ function HomePage() {
                 <h3 className="sixth-section-title section-title">TEDDY <br/>COLECTION</h3>
                 <span className="sixth-section-text section-text">WINTER 2021</span>
                 <Link href="#"><a className="sixth-section-link section-link">DISCOVER NOW</a></Link>
+             </div>
              <div className="sixth-section-container-products-img sixth-section-container-products-img1">
                <img src="https://picsum.photos/id/237/300/400" alt=""/>
              </div>
-            </div>
+
 
             <div className="sixth-section-container-items sixth-section-container-items2">
                 <h3 className="sixth-section-title section-title">TEDDY <br/>COLECTION</h3>
@@ -208,7 +212,6 @@ function HomePage() {
             <div className="sixth-section-container-products-img sixth-section-container-products-img2">
                 <img src="https://picsum.photos/id/237/300/400" alt=""/>
             </div>
-
         </div>
     </section>
     <footer id="footer">
@@ -239,6 +242,7 @@ function HomePage() {
                 <div className="footer-container-column footer-grid-area1">
                     <h4 className="footer-title">BÜLTENİMİZE KATILIN</h4>
                     <input type="text" className="footer-input" placeholder="e-posta adresinizi giriniz"/>
+                    <p className="footer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, reiciendis.</p>
                     <p className="copyright">KeiKei all rights reserved</p>
                 </div>
                 <div className="footer-container-column footer-grid-area2">
