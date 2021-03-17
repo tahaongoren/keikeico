@@ -39,13 +39,13 @@ nav {
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  cursor: pointer;
 }
 .line {
   width: 20px;
   height: 3px;
   background-color: #000;
   margin-bottom: 3px;
+  cursor: pointer;
   &:last-child {
     margin-bottom: 0;
   }
@@ -94,12 +94,34 @@ nav {
 }
 .section-link {
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 16px;
   text-decoration: none;
   color: #000;
   padding: 15px 30px;
   font-weight: bold;
+  transition: all .2s;
+  &:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
+}
+.first-section-link {
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: all .2s;
+  position: absolute;
+  bottom: 20%;
+  left: 46%;
+  &:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
 }
 .svg-icon-prev {
   top: 50%;
@@ -231,17 +253,13 @@ nav {
 }
 .sixth-section-container {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 70px 0 70px;
+  justify-content: space-evenly;
 }
 .sixth-section-container-items {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin: 0 20px 30px 0;
-}
-.sixth-section-container-sub {
-  display: flex;
 }
 .sixth-section-title {
   font-size: 32px;
@@ -278,6 +296,9 @@ nav {
   font-size: 10px;
   color: #000;
   margin: 10px 0;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .footer-input {
   border: none;
@@ -285,6 +306,11 @@ nav {
   padding-bottom: 5px;
   margin: 5px 0;
   background-color: #e8e8e8;
+  outline: none;
+}
+.footer-text {
+  display: none;
+  font-size: 12px;
 }
 .copyright {
   font-size: 12px;
@@ -295,7 +321,17 @@ nav {
     border-radius: 10px;
     margin-bottom: 5px;
     height: 100%;
+    width: 135px;
+  }
+}
+.footer-grid-area-logo {
+  a {
+    width: 50px;
+    height: 70px;
+  }
+  img {
     width: 100%;
+    height: 100%;
   }
 }
 .footer-nav {
@@ -311,4 +347,130 @@ nav {
     text-decoration: none;
     color: #fff;
   }
+}
+@media (max-width: 375px) {
+  nav {
+    padding: 60px 10px 0 10px;
+    justify-content: space-around;
+  }
+  .nav-container {
+    width: auto;
+  }
+  .nav-svg-container {
+    width: 20%;
+  }
+  .site-logo {
+    width: 100%;
+    img {
+      width: 150px;
+    }
+  }
+  .svg-container {
+    display: none;
+  }
+  .section-text {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .first-section-link {
+    font-size: 12px;
+    left: 32%;
+    margin-top: 25px;
+  }
+  .third-section {
+    padding: 20px 0;
+  }
+  .third-section-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .third-section-product-container {
+    padding: 0;
+  }
+  .third-section-title-container {
+    padding-left: 20px;
+  }
+  .third-section-svg-container {
+    display: none;
+  }
+  .product-container {
+    width: 35%;
+    margin-right: 5px;
+    img {
+      width: 120px;
+      height: 200px;
+    }
+  }
+  .fourth-section-text-container {
+    bottom: 5%;
+    right: 6%;
+  }
+  .sixth-section {
+    background: url("https://picsum.photos/id/870/1440/800?grayscale&blur=2") no-repeat;
+  }
+  .sixth-section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 182px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "text1 img1" "img2 text2";
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  .sixth-section-container-items2 {
+    grid-area: text2;
+  }
+  .sixth-section-container-products-img {
+    img {
+      width: 180px;
+      height: 300px;
+    }
+  }
+  .sixth-section-link {
+    padding: 15px 25px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 50px 120px 80px 80px;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    grid-row-gap: 60px;
+    grid-column-gap: 10px;
+  }
+  .footer-grid-area1 {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+  .footer-grid-area2 {
+    grid-column: 3 / 5;
+  }
+  .footer-input {
+    display: none;
+  }
+  .footer-text {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+.fifth-section-container {
+  padding: 20px 0;
+  overflow: hidden;
+}
+.fifth-section-title-container {
+  top: 6%;
+  left: 10%;
+}
+.fifth-svg-icon-next {
+  top: 6%;
+}
+.fifth-svg-icon-prev {
+  top: 6%;
+  right: 15%;
+}
 }

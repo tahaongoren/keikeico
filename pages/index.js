@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 
 
 
 
 
 function HomePage() {
-    return <div id="main">
+    return (
+        <div id="main">
 
         <Head>
             <title>KeiKei</title>
@@ -26,7 +28,12 @@ function HomePage() {
                 </div>
                      <Link href="#">
                         <a className="site-logo">
-                            <img src="https://picsum.photos/seed/picsum/300/150" alt=""/>
+                            <Image
+                                src="/logo.jpg"
+                                width={300}
+                                height={150}
+
+                            />
                         </a>
                      </Link>
             </div>
@@ -79,27 +86,52 @@ function HomePage() {
             </div>
             <div className="third-section-product-container">
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/300" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={300}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/300" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={300}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/300" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={300}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/300" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={300}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/300" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={300}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
@@ -142,7 +174,7 @@ function HomePage() {
     </section>
     <section className="section fourth-section">
         <div className="section-text-container fourth-section-text-container ">
-            <h4 className="section-title fourth-section-title">HAPPY <br/>VALENTINES DAY</h4>
+            <h4 className="section-title fourth-section-title">NEW <br/>COLLECTION</h4>
             <h6 className="section-subtitle fourth-section-subtitle">WINTER 2021</h6>
             <Link href="#"><a className="section-link fourth-section-link">SHOP NOW</a></Link>
         </div>
@@ -161,27 +193,54 @@ function HomePage() {
             </div>
             <div className="fifth-section-product-container">
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/400" alt=""/>
+
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={400}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/250" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={250}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/300" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={300}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/250" alt=""/>
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={250}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
                 <div className="product-container">
-                    <img src="https://picsum.photos/id/237/200/350" alt=""/>
+
+                    <Image
+                        src="/200x400.jpg"
+                        width={200}
+                        height={350}
+
+                    />
                     <p className="product-title">DERI UZUN YAGMURLUK</p>
                     <h4 className="product-price">$ 299</h4>
                 </div>
@@ -200,7 +259,12 @@ function HomePage() {
                 <Link href="#"><a className="sixth-section-link section-link">DISCOVER NOW</a></Link>
              </div>
              <div className="sixth-section-container-products-img sixth-section-container-products-img1">
-               <img src="https://picsum.photos/id/237/300/400" alt=""/>
+                 <Image
+                     src="/200x400.jpg"
+                     width={300}
+                     height={400}
+
+                 />
              </div>
 
 
@@ -210,7 +274,12 @@ function HomePage() {
                 <Link href="#"><a className="sixth-section-link section-link">DISCOVER NOW</a></Link>
             </div>
             <div className="sixth-section-container-products-img sixth-section-container-products-img2">
-                <img src="https://picsum.photos/id/237/300/400" alt=""/>
+                <Image
+                    src="/200x400.jpg"
+                    width={300}
+                    height={400}
+
+                />
             </div>
         </div>
     </section>
@@ -218,9 +287,15 @@ function HomePage() {
         <div className="footer-container">
                 <div className="footer-container-column footer-grid-area-logo">
                     <Link href="#"><a>
-                        <img src="../assets/img/logomark%201.png" alt="" className="logomark"/>
+                        <Image
+                            src="/logo.png"
+                            width={50}
+                            height={70}
+
+                        />
                     </a></Link>
                 </div>
+
             <div className="footer-container-column">
                 <h4 className="footer-title">KEİKEİ</h4>
                 <Link href="#"><a className="footer-link"><p>Mağazalar</p></a></Link>
@@ -248,10 +323,22 @@ function HomePage() {
                 <div className="footer-container-column footer-grid-area2">
                     <h4 className="footer-title">UYGULAMAMIZI İNDİRİN</h4>
                     <div className="footer-download-img">
-                        <Link href="#"><a><img src="../assets/img/Adsız.png" alt=""/></a></Link>
+                        <Link href="#"><a><Image
+                            src="/Adsız.png"
+                            width={150}
+                            height={50}
+
+                        /></a></Link>
                     </div>
                     <div className="footer-download-img">
-                        <Link href="#"><a><img src="../assets/img/Adsız.png" alt=""/></a></Link>
+                        <Link href="#"><a>
+                            <Image
+                                src="/Adsız.png"
+                                width={150}
+                                height={50}
+
+                        />
+                        </a></Link>
                     </div>
                 </div>
         </div>
@@ -262,6 +349,8 @@ function HomePage() {
         </div>
 
         </div>
+
+    )
 }
 
 export default HomePage
